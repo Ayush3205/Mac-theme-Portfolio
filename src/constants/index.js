@@ -14,6 +14,11 @@ const navLinks = [
     name: "Resume",
     type: "resume",
   },
+  {
+    id: 5,
+    name: "Resume1",
+    type: "resume1",
+  },
 ];
 
 const navIcons = [
@@ -455,6 +460,25 @@ const RESUME_LOCATION = {
   ],
 };
 
+const RESUME_LOCATION_1 = {
+  id: 3,
+  type: "resume1",
+  name: "Resume1",
+  icon: "/icons/file.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "Ayush_Gupta.pdf",
+      icon: "/images/pdf.png",
+      kind: "file",
+      fileType: "pdf",
+      // you can add `href` if you want to open a hosted resume
+      // href: "/your/resume/path.pdf",
+    },
+  ],
+};
+
 const TRASH_LOCATION = {
   id: 4,
   type: "trash",
@@ -487,6 +511,7 @@ export const locations = {
   work: WORK_LOCATION,
   about: ABOUT_LOCATION,
   resume: RESUME_LOCATION,
+  resume1: RESUME_LOCATION_1,
   trash: TRASH_LOCATION,
 };
 
@@ -496,6 +521,7 @@ const WINDOW_CONFIG = {
   finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  resume1: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
